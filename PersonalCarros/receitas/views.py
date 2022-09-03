@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
 def index(request):
     return render(request, 'index.html')
+
+def ferrari(request):
+    return render(request,"ferrari.html")
