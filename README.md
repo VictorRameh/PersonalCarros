@@ -31,6 +31,8 @@
 - `STATIC_ROOT`: configuração da pasta de saída (destino) dos arquivos estáticos.
 - `STATICFILES_DIRS`: configuração da(s) pasta de origem dos arquivos estáticos.
 - Após realizar essas configurações execute, no terminal, o comando `python manage.py collectstatic`.
+- Na primeira linha do arquivo `index.html` insira `{% load static %}`. Esse comando deve ser usado em todos os arquivos em que você for utilizar arquivos estáticos.
+- Insira uma imagem utilizando o comando `<img src="{% static 'car_icon.png' %}">`. Sempre que for utilizar um arquivo estático você deve utilizar `{% static 'nome-do-arquivo' %}`
 
 - [ ] Utilizando links
     - 

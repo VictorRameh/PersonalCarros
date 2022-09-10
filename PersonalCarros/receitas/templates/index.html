@@ -7,22 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concessionária</title>
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
 </head>
 <body>
     <h1>
-        <img src="{% static 'car_icon.png' %}">
-        PersonalCarros
+        <img src="{% static 'car_icon.png' %}"
+        class="imagem-logo">
     </h1>
+        <h1>PersonalCarros</h1>
     <h2>Seu site de carros</h2>    
 
-<table border="1">
+<table border="1" class="tabela-receitas">
     <tr>
         <th>Carro</th>
         <th>Vídeo</th>
         <th>Ações</th>
     </tr>
     <tr> 
-        <td>Corvette</td>
+        <td><img src="{% static 'supercar.png' %}"
+            class="logo-carro">Corvette</td>
         <td>https://www.youtube.com/watch?v=aAqQmC_tSUg</td>
         <td><a href="https://www.webmotors.com.br/comprar/chevrolet/corvette/62-coupe-v8-gasolina-2p-automatico/2-portas/2008/41779041?pos=b41779041c:&np=1">Ver o carro completo</a></td>
     </tr>
