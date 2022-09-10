@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,7 +9,10 @@
     <title>Concessionária</title>
 </head>
 <body>
-    <h1>PersonalCarros</h1>
+    <h1>
+        <img src="{% static 'car_icon.png' %}">
+        PersonalCarros
+    </h1>
     <h2>Seu site de carros</h2>    
 
 <table border="1">
@@ -25,7 +30,12 @@
         <td>Ferrari</td>
         <td>https://www.youtube.com/watch?v=wAPrc39fOG8</td>
         <td><a href="ferrari">Ver carro completo</a></td>
-    </tr>   
+    </tr>  
+    <tr>
+        <td>BMW M3</td>
+        <td>www.youtube.com/</td>
+        <td><a href="BMW M3">Ver carro completo</a></td>
+    </tr> 
 </table>
 </body>
 </html>
